@@ -10,6 +10,10 @@ Remove the main class on the div with a footer class.
 Create a new li element.
 Give the li the text "four".
 Append the li to the ul element.-->
+
+<!-- Add on to Exercise #4
+Loop over all the li inside the ol tag and give them a background "green" color.
+Remove the div with a footer class. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -94,6 +98,13 @@ Append the li to the ul element.-->
             document.querySelector("#container ul").appendChild(x);
             // document.getElementById("myList").appendChild(x);
         }
+        //CHALLENGE 1 (LOS ELEMENTOS DE LA LISTA SE MARCAN EN VERDE)
+        var olandLiElements = document.querySelector("li ol");
+        olandLiElements.forEach(function(element){
+            (element.style.backgroundColor = "green");
+        })
+        //CHALLENGE 2 (HACER EL REMOVE)
+        footerRm();
     </script>
 </body>
 </html>
